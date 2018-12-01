@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto');
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+html {
+    font-size: 14pt; 
+    /* background-color: #FFE2C2; */
+}
+
+span {
+    color: white; 
+    font-weight: bold; 
+}
+
+body {
+    text-align: center; 
+    background-color: #FFE2C2;
+    background-image: url(./images/9.jpg);
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center;
+    color: #2e6789;
+    background-size: auto;
+    -o-background-size: auto;
+    -moz-background-size: auto;
+    -webkit-background-size: auto;
+    
+}
+
+h1 {
+    margin-bottom: 15px; 
+    font-weight: bold; 
+    text-align: center; 
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold; 
+    padding: 10px 0; 
+    
+}
+
+@media (min-width: 768px) {
+    h1 {
+        text-align: left; 
+    }
+}
+
+
+h2 {
+    margin-bottom: 10px; 
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px 0; 
+    font-weight: bold; 
+}
+
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+p {
+    text-align: left; 
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+
+/* for modal */
+
+button {
+    border: none;
+    color: white; 
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 24px;
+    font-weight: bold; 
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif; 
+
+}
+
+
+
+button.black {
+    color: black; 
+    
+}
+
+button:hover, button.black:hover {
+    text-decoration: underline; 
+}
+
+label {
+    text-align: left; 
+}
+
+.modal-content {
+    background-color:#892E39; 
+    color: white; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+ul.stack {
+    text-align: left; 
+    list-style: none;
+    padding: 2px 0; 
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px; 
+    font-family: 'Roboto', sans-serif; 
+    
+}
+
+li {
+    padding: 0 10px; 
+    color: white; 
+    background-color: darkslategray; 
+    
+}
+
+li:not(:first-child) {
+    opacity: 0.9;
+    
+}
+
+li:not(:last-child) {
+    border-bottom-style: dotted;
+}
+
+ul.stack > li.liTop {
+    margin-bottom: 0;
+    border-bottom: 5px solid #FFE2C2;
+    text-align: center;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+    padding-top: 15px; 
+}
+
+
+
+.container {
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.spacer {
+    height: 50px; 
+}
+
+.hdgBox {
+    padding-left: 20px; 
+    margin-left: 5px; 
+    margin-right: 5px; 
+}
+
+
+
+.sideCar {
+    margin-left: 5px; 
+    margin-right: 5px; 
+    
+}
+
+
+.red  {
+    background-color: #892E39;
+    color: white; 
+
+}
+
+.green {
+    background-color: #2e8951;
+    color: white; 
+}
+
+.blue {
+    background-color: #2e6789; 
+    color: white; 
+}
+
+.brown {
+    background-color: #89502e; 
+    color: white; 
+}
+
+.carousel-item img {
+    width: 980px; 
+    height: auto; 
+    opacity: 0.95;
+}
+
+
+
+
+.projectHdg  {
+    color: white; 
+    font-weight: bold; 
+    text-align: center; 
+    position: relative;
+    display: inline; 
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

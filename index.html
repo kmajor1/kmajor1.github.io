@@ -1,63 +1,289 @@
-<!doctype <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <title>Kevin Major Portfolio - About Me</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Major Developments</title>
+
+  <!-- update the version number as needed -->
+  <script  src="/__/firebase/5.5.9/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script  src="/__/firebase/5.5.9/firebase-auth.js"></script>
+  <script  src="/__/firebase/5.5.9/firebase-database.js"></script>
+  <script  src="/__/firebase/5.5.9/firebase-messaging.js"></script>
+  <script  src="/__/firebase/5.5.9/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script  src="/__/firebase/init.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <!-- popper plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- custom styles -->
+  <link rel="stylesheet" href="./assets/style.css" type="text/css">
+  <!-- scroll reveal animations -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
 
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="./index.html">About Me</a>
-                <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-                <a class="nav-item nav-link" href="./contact.html">Contact</a>
-            </div>
-        </div>
-        <a href="./index.html" class="navbar-brand">Kevin Major</a>
-    </nav>
-    <div class="container">
+  <header id="nav" class="row">
+    <div id="intro" class="load-hidden col-md-9 mt-2">
 
-        <h1 class="section-title text-center text-md-left">About Me</h1>
-        <div class="d-flex flex-column flex-md-row mb-4">
-            <div class="text-center text-md-left">
-                <img alt="My Dog Nephew" class="img-fluid" src="./assets/images/headshot_dog.png">
-            </div>
-            <div>
-                <p class="clearfix text-center text-md-left p-3"> I am a former Product Manager with 6 years of experience. I decided I liked
-                    coding
-                    better. So I quit my
-                    job, sold my car, took the cash and enrolled in bootcamp! Looking forward to a career in web
-                    development!
-                    <br> I also enjoy cinema, non-fiction books, aviation and the outdoors.<br> Political
-                    Science Graduate and avid <a href="http://www.fivethirtyeight.com/" target="_blank">Political
-                        statistics
-                        junkie</a> <br>
-                </p>
-            </div>
-
-        </div>
-
+      <h1 class="ml-2 mt-4">Product Manager, Full-Stack Developer</h1>
     </div>
+    <div class="col-md-3 col mt-2 mb-2 text-right">
+      <a href="https://www.linkedin.com/in/kevin-major-32bb1433">
+        <img id="linkedInImg" class="mr-2" src="./assets/images/In-White-66px-R.png">
+      </a>
+      <a href="http://github.com/kmajor1" target="_new" alt="My GitHub Repo">
+        <img id="gitHubImg" class="mr-2" src="./assets/images/GitHub-Mark-Light-64px.png">
+      </a>
+      <button class="" id="btnContactMe" type="button" data-toggle="modal" data-target="#modelId">
+        Contact Me!
+      </button>
+    </div>
+  </header>
+  <div class="container-fluid">
 
-    <footer class="footer fixed-bottom mt-2 mt-sm-4 text-center">
-        <p id="footerText" class="text-white">Copyright &copy 2018 Kevin Major</p>
-    </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <div class="row">
+      <div id="introBody" class="col-md-10 col hdgBox red load-hidden">
+        <h2>Hi, I'm Kevin.<br> Nice to meet you.</h2>
+        <p>I am a Web developer with six years of business and technical experience working as a product manager in the
+          financial services industry.
+        </p>
+        <p>Experience working directly with IT professionals including developers, QA specialists and senior
+          management. I have technical experience with HTML, CSS, Git, JavaScript, TypeScript, MySQL, MongoDB, Firebase
+          and Node.JS. Proficient in full-stack with a strong backend skillset. </p>
+
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+    <div id="myFace" class="row">
+      <div class="col spacer">
+      </div>
+    </div>
+    <div class="row">
+      <div id="myStackTitle" class="load-hidden col-md-10 col sideCar blue mb-3 mr-1">
+        <h2 class="mt-3 p-0">My Stacks</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 col">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <ul class="stack">
+              <li id="stackTitle1" class="liTop">
+                <h4>What I Speak</h4>
+              </li>
+              <li class="liSeq1">HTML</li>
+              <li class="liSeq1">CSS</li>
+              <li class="liSeq1">JavaScript</li>
+              <li class="liSeq1">TypeScript</li>
+              <li class="liSeq1">mySQL</li>
+              <li class="liSeq1">MongoDB</li>
+
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <ul class="stack">
+              <li id="stackTitle2" class="liTop">
+                <h4>What I've Done</h4>
+              </li>
+              <li class="liSeq1">Eight years in Financial Services</li>
+              <li class="liSeq1">Six years Product Management</li>
+              <li class="liSeq1">Product Owner internal web apps</li>
+              <li class="liSeq1">Agile SDLC</li>
+              <li class="liSeq1">Management Presentations</li>
+              <li class="liSeq1">Regulatory Presentations</li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <ul class="stack">
+              <li id="stackTitle3" class="liTop">
+                <h4>What I've Learned</h4>
+              </li>
+              <li class="liSeq1">Certificate: U of T Full Stack Web Development Bootcamp</li>
+              <li class="liSeq1">CFA Level I Exam Passed</li>
+              <li class="liSeq1">Canadian Securities Course</li>
+              <li class="liSeq1">Business Analysis Course (U of T)</li>
+              <li class="liSeq1">BA: Honors Political Science</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div id="myProjectsTitle" class="col-md-10 col sideCar blue mr-1 mb-2">
+        <h2 class="p-0 mt-3">My Projects</h2>
+        <!-- insert carousel here  -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10">
+        <div id="myProjectsList" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myProjectsList" data-slide-to="0" class="active"></li>
+            <li data-target="#myProjectsList" data-slide-to="1"></li>
+            <li data-target="#myProjectsList" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="https://marvelherogenerator.com/firebaseapp.com">
+                  <h2 class="projectHdg">Mavatar!  </h2>
+                </a>
+                <a href="https://github.com/kmajor1/Hungry-Faces">
+                  <img style="max-width: 64px" src="./assets/images/GitHub-Mark-Light-64px.png">
+                </a>
+              </div>
+              <a href="https://marvelherogenerator.firebaseapp.com/" target="_new">
+                <img class="projectScreen img-fluid" src="./assets/images/mavatar_screen.jpg" alt="Mavatar - Marvel Hero Generator"></a>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="https://kmajor1.github.io/wordguessgame/" target="_new">
+                  <h2 class="projectHdg">Jurassic Park Hangman!  </h2>
+                </a>
+                <a href="https://github.com/kmajor1/wordguessgame/" target="_new">
+                  <img src="./assets/images/GitHub-Mark-Light-64px.png" style="max-width: 60px">
+                </a>
+              </div>
+              <a href="http://kmajor1.github.io/wordguessgame/" target="_new">
+                <img class="projectScreen img-fluid" src="./assets/images/jurassic_screen.jpg">
+              </a>
+
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="https://kmajor1.github.io/giftastic/" target="_new">
+                  <h2 class="projectHdg">Giftastic!  </h2>
+                </a>
+                <a href="https://github.com/kmajor1/giftastic/" target="_new">
+                  <img src="./assets/images/GitHub-Mark-Light-64px.png" style="max-width: 64px">
+                </a>
+              </div>
+
+              <a href="http://kmajor1.github.io/giftastic/" target="_new">
+                <img class="projectScreen img-fluid" src="./assets/images/giftastic_screen2.jpg">
+              </a>
+
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#myProjectsList" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myProjectsList" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col spacer"></div>
+
+  </div>
+  <footer class="row">
+    <div class="ml-5 text-left">
+      <p style="font-weight: bold">&copy; Kevin Major 2018</p>
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Send me an email!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form id="formContactMe">
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group text-left">
+                    <label for="inputName">Your Name</label>
+                    <input class="form-control" type="text" id="inputName" name="inputName">
+                  </div>
+                  <div class="form-group text-left">
+                    <label for="inputEmail">Your Email</label>
+                    <input class="form-control" type="email" id="inputEmail" name="inputEmail">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group text-left">
+                    <label for="inputComments">Your Comments</label>
+                    <textarea class="form-control" id="inputComments" name="inputComments"></textarea>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <script>
+    ScrollReveal().reveal('#introBody', { delay: 1000, duration: 3500, origin: 'left', distance: '150px' });
+    ScrollReveal().reveal('#intro', { delay: 400, duration: 3000, origin: 'right', distance: '150px' });
+    ScrollReveal().reveal('.liSeq1', { mobile: false, viewFactor: 0.50, delay: 3000,  origin: 'bottom', distance: '150px' });
+    ScrollReveal().reveal('#stackTitle3', { viewFactor: 0.90, delay: 1000, duration: 2000, origin: 'left', distance: '400px' });
+    ScrollReveal().reveal('#stackTitle2', { viewFactor: 0.90, delay: 1000, duration: 2000, origin: 'left', distance: '400px' });
+    ScrollReveal().reveal('#stackTitle1', { viewFactor: 0.90, delay: 1000, duration: 2000, origin: 'left', distance: '400px' });
+    ScrollReveal().reveal('#myStackTitle', { viewOffset: { bottom: -60 }, delay: 1000, duration: 1500, origin: 'left', distance: '900px' });
+    ScrollReveal().reveal('#myProjectsTitle', { viewOffset: { bottom: -60 }, delay: 100, duration: 2000, origin: 'left', distance: '900px' });
+    linkedInImg = document.getElementById('linkedInImg');
+    gitHubImg = document.getElementById('gitHubImg');
+    btnContactMe = document.getElementById('btnContactMe');
+    console.log(linkedInImg);
+    console.log(gitHubImg);
+
+    function jsMQ(x) {
+    if (x.matches) { // If media query matches
+        gitHubImg.src = "./assets/images/GitHub-Mark-64px.png";
+        linkedInImg.src = "./assets/images/In-Black-66px-R.png";
+        btnContactMe.classList = "black";
+    } else {
+      gitHubImg.src = "./assets/images/GitHub-Mark-Light-64px.png";
+        linkedInImg.src = "./assets/images/In-White-66px-R.png";
+        btnContactMe.classList = "";
+    }
+}
+
+var x = window.matchMedia("(max-width: 700px)");
+jsMQ(x); // Call listener function at run time
+x.addListener(jsMQ); // Attach listener function on state changes
+
+
+  </script>
+    <script src="./assets/app.js"></script>
+
 </body>
 
 </html>
